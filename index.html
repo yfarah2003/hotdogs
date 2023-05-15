@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Concession Stand Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Concession Stand Calculator</h1>
+      <p>Enter the estimated number of moviegoers and the day of the week to calculate the estimated number of concession items needed.</p>
+      <form>
+        <label for="estimatedMovieGoers">Estimated number of moviegoers:</label>
+        <input type="text" id="estimatedMovieGoers" name="estimatedMovieGoers"><br>
+        <label for="dayOfWeek">Day of the week:</label>
+        <select id="dayOfWeek" name="dayOfWeek">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select><br><br>
+        <button type="button" onclick="calculateConcessionItems()">Calculate</button>
+      </form>
+      <div id="results">
+        <h2>Results:</h2>
+        <p>Estimated number of hot dogs needed: <span id="hotDogsNeeded"></span></p>
+        <p>Estimated number of popcorn containers needed: <span id="popcornNeeded"></span></p>
+        <p>Estimated number of candy boxes needed: <span id="candyNeeded"></span></p>
+        <p>Estimated number of soda cups needed: <span id="sodaNeeded"></span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
